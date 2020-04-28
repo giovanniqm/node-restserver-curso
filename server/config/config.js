@@ -26,7 +26,7 @@ if (process.env.NODE_ENV === 'dev') {
     urlDB = 'mongodb://localhost:27017/crud';
 } else {
 
-    urlDB = 'mongodb+srv://giovanniq:5587700gq@restserver-db3wk.mongodb.net/test?retryWrites=true&w=majority';
+    urlDB = process.env.MONGO_URI;
 
 }
 
